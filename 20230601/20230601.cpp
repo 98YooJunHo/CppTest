@@ -49,8 +49,45 @@ using namespace std;
 //	//printf("%d + %d = %d\n", num1, num2, result);
 //	//// }
 //
-//	const float PI = 3.141592f; //끝에 f를 씀으로 float로 만듦
+//	//const float PI = 3.141592f; //끝에 f를 씀으로 float로 만듦
 //
-//	//// main 함수 종료
+//	//char charvalue = 'B';
+//
+//	//printf("char 출력할 때는 C로 해보자 -> %c\n", charvalue);
+//
+//	//bool issame = ('A' == 65);
+//	//printf("\n진짜로 같은가?? %d\n", issame);
+//	//
+//	//char someAlphabet = '1';
+//	//bool isBigAlphabet = ('A' <= someAlphabet && someAlphabet <= 'Z');
+//	//bool isSmallAlphabet = ('a' <= someAlphabet && someAlphabet <= 'z');
+//	//bool isNumber = ('0' <= someAlphabet && someAlphabet <= '9');
+//	//printf("\nsomeAlphabet은 대문자인가?? %d\n", isBigAlphabet);
+//
+//	//if (isBigAlphabet)
+//	//{
+//	//	printf("영문 대문자 입니다.\n");
+//	//}					// if문은 조건식이 참이면 스코프 안의 내용을 진행하고, 거짓이면 건너뛴다.
+//	//else if (isSmallAlphabet)
+//	//{
+//	//	printf("영문 소문자 입니다.\n");
+//	//}
+//	//else if (isNumber)
+//	//{
+//	//	printf("숫자 입니다.\n");
+//	//}
+//	//else
+//	//{
+//	//	printf("잘 모르겠습니다..\n");
+//	//}					// 위의 조건식에서 참이 아닌, 다른 모든 경우 스코프 안의 내용을 진행한다.
+//	int loopcount = 1;
+//
+//	while (388 >= loopcount)
+//	{
+//		printf("Hello World!! %d번째\n", loopcount);
+//		loopcount += 1;
+//	}					// loop: 루프 종료
+//
+//						// main 함수 종료
 //	return 0;
-//}             // main() (이런식으로 함수의 끝부분을 표시해주면 좋다)
+//}						// main() (이런식으로 함수의 끝부분을 표시해주면 좋다)

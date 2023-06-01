@@ -1,85 +1,103 @@
-<mxfile host="app.diagrams.net" modified="2023-06-01T04:04:25.576Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="sJFtlhuNS2N4wjfA7n6F" version="21.3.6" type="device">
+<mxfile host="app.diagrams.net" modified="2023-06-01T08:46:10.033Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="AmKSw0QbRvAENBuYPOED" version="21.3.6" type="device">
   <diagram name="페이지-1" id="D-Mt36cfbyuV8Gwe68TT">
-    <mxGraphModel dx="466" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-2" value="&lt;font size=&quot;3&quot;&gt;6.1~6.2 자습불가&lt;br&gt;6.9 금 회식 각출&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-2" value="&lt;font size=&quot;3&quot;&gt;6.1~6.2 자습불가&lt;br&gt;6.9 금 회식 각출&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="20" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WTVr9WXaGoecGnn-x4Mx-3" target="WTVr9WXaGoecGnn-x4Mx-9">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WTVr9WXaGoecGnn-x4Mx-3" target="WTVr9WXaGoecGnn-x4Mx-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-3" value="&lt;font size=&quot;3&quot;&gt;자료형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-3" value="&lt;font size=&quot;3&quot;&gt;자료형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="145" y="350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WTVr9WXaGoecGnn-x4Mx-4">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WTVr9WXaGoecGnn-x4Mx-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="200" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-4" value="&lt;font size=&quot;3&quot;&gt;콤마 연산자: 둘 이상의 변수를 동시에 선언하거나&lt;br&gt;둘 이상의 문장을 한 행에 삽입하는 경우에 사용되는 연산자이다&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-4" value="&lt;font size=&quot;3&quot;&gt;콤마 연산자: 둘 이상의 변수를 동시에 선언하거나&lt;br&gt;둘 이상의 문장을 한 행에 삽입하는 경우에 사용되는 연산자이다&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="110" width="380" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-6" value="&lt;font size=&quot;3&quot;&gt;int num1, num2;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-6" value="&lt;font size=&quot;3&quot;&gt;int num1, num2;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="280" width="180" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-9" value="&lt;font size=&quot;3&quot;&gt;자료형(DataType)은 데이터를표현하는방법을 의미한다&lt;br&gt;그리고 int는그러한 자료형의 일종이다.&lt;br&gt;&lt;br&gt;이러한 자료형이 미리 정의되어 있기에 우리는 자료형의 이름을 이용해서 쉽게 메모리 공간을 할당할 수 있다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-9" value="&lt;font size=&quot;3&quot;&gt;자료형(DataType)은 데이터를표현하는방법을 의미한다&lt;br&gt;그리고 int는그러한 자료형의 일종이다.&lt;br&gt;&lt;br&gt;이러한 자료형이 미리 정의되어 있기에 우리는 자료형의 이름을 이용해서 쉽게 메모리 공간을 할당할 수 있다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry y="435" width="410" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-11" value="&lt;font size=&quot;3&quot;&gt;실수형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-11" value="&lt;font size=&quot;3&quot;&gt;실수형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-12" value="&lt;font size=&quot;3&quot;&gt;정수형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-12" value="&lt;font size=&quot;3&quot;&gt;정수형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-13" value="&lt;font size=&quot;3&quot;&gt;정수형&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-13" value="&lt;font size=&quot;3&quot;&gt;반복문&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-14" value="&lt;font size=&quot;3&quot;&gt;char (1byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-14" value="&lt;font size=&quot;3&quot;&gt;char (1byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-15" value="&lt;font size=&quot;3&quot;&gt;short (2byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-15" value="&lt;font size=&quot;3&quot;&gt;short (2byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-16" value="&lt;font size=&quot;3&quot;&gt;int (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-16" value="&lt;font size=&quot;3&quot;&gt;int (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-17" value="&lt;font size=&quot;3&quot;&gt;long (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-17" value="&lt;font size=&quot;3&quot;&gt;long (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-18" value="&lt;font size=&quot;3&quot;&gt;long long (8byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-18" value="&lt;font size=&quot;3&quot;&gt;long long (8byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-19" value="&lt;font size=&quot;3&quot;&gt;long double (8byte 이상)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-19" value="&lt;font size=&quot;3&quot;&gt;long double (8byte 이상)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-20" value="&lt;font size=&quot;3&quot;&gt;double (8byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-20" value="&lt;font size=&quot;3&quot;&gt;double (8byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-21" value="&lt;font size=&quot;3&quot;&gt;float (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-21" value="&lt;font size=&quot;3&quot;&gt;float (4byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-23" value="&lt;font size=&quot;3&quot;&gt;1byte = 8bit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-23" value="&lt;font size=&quot;3&quot;&gt;1byte = 8bit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1070" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-24" value="&lt;font size=&quot;3&quot;&gt;1byte = 8bit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-24" value="&lt;font size=&quot;3&quot;&gt;1byte = 8bit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-25" value="&lt;font size=&quot;3&quot;&gt;bit는 0과 1 단&lt;br&gt;두 개만 나타내는 단위&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-25" value="&lt;font size=&quot;3&quot;&gt;bit는 0과 1 단&lt;br&gt;두 개만 나타내는 단위&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="390" width="165" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-27" value="&lt;font size=&quot;3&quot;&gt;1bit -&amp;gt; 0, 1&lt;br&gt;0 또는 1 한 자리&lt;br&gt;그래서 숫자 2^1개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-27" value="&lt;font size=&quot;3&quot;&gt;1bit -&amp;gt; 0, 1&lt;br&gt;0 또는 1 한 자리&lt;br&gt;그래서 숫자 2^1개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="480" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-28" value="&lt;font size=&quot;3&quot;&gt;2bit -&amp;gt; 00, 01, 10, 11&lt;br&gt;0 또는 1 두 자리&lt;br&gt;그래서 숫자 2^2개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-28" value="&lt;font size=&quot;3&quot;&gt;2bit -&amp;gt; 00, 01, 10, 11&lt;br&gt;0 또는 1 두 자리&lt;br&gt;그래서 숫자 2^2개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="570" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-29" value="&lt;font size=&quot;3&quot;&gt;3bit -&amp;gt; &lt;br&gt;000, 001, 010, 011,&lt;br&gt;100, 101, 110, 111&lt;br&gt;0 또는 1 세 자리&lt;br&gt;그래서 숫자 2^3개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-29" value="&lt;font size=&quot;3&quot;&gt;3bit -&amp;gt; &lt;br&gt;000, 001, 010, 011,&lt;br&gt;100, 101, 110, 111&lt;br&gt;0 또는 1 세 자리&lt;br&gt;그래서 숫자 2^3개 표현&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="660" width="170" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="WTVr9WXaGoecGnn-x4Mx-30" value="&lt;font size=&quot;3&quot;&gt;책이나 블로그에 나와있는&lt;br&gt;자료형 크기 말고,&lt;br&gt;내 컴퓨터에 맞는 자료형 크기를 직접 알아보고 싶은 경우에&lt;br&gt;sizeof()라는 함수를 사용한다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WTVr9WXaGoecGnn-x4Mx-30" value="&lt;font size=&quot;3&quot;&gt;책이나 블로그에 나와있는&lt;br&gt;자료형 크기 말고,&lt;br&gt;내 컴퓨터에 맞는 자료형 크기를 직접 알아보고 싶은 경우에&lt;br&gt;sizeof()라는 함수를 사용한다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="470" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-1" value="&lt;font size=&quot;3&quot;&gt;char (1byte)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-2" value="&lt;font size=&quot;3&quot;&gt;문자 1글자를&lt;br&gt;받기 위한 자료형이다.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="730" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-3" value="&lt;font size=&quot;3&quot;&gt;C++에서 문자는 &lt;br&gt;아스키 코드라는 것을 사용한다.&lt;br&gt;&lt;br&gt;아스키 코드는 정수로 되어 있다.&lt;br&gt;그러니 컴퓨터는 문자와 숫자를&lt;br&gt;자체적으로는 구별하지 못한다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="840" width="275" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-4" value="&lt;font size=&quot;3&quot;&gt;반복문&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-6" value="&lt;font size=&quot;3&quot;&gt;지금까지는 한 라인에 명령을 한 줄 정도 실행했었음.&lt;br&gt;반복문은 같은 명령을 여러번 시키고 싶을 때 사용한다.&lt;br&gt;&lt;br&gt;c++언어에서는 while문, for문 같은 반복문이 있다.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415.63" y="900" width="408.75" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="s4otmB7vpADGgEakdX1i-7" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: medium; background-color: initial;&quot;&gt;while문 사용법&lt;/span&gt;&lt;/div&gt;&lt;font size=&quot;3&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;while(조건식)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;//조건이 참이면 스코프 안의 내용을 실행한다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;//조건식이 거짓이면 스코프 밖으로 빠져나간다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="418" y="1080" width="408.75" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
