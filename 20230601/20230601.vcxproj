@@ -130,6 +130,7 @@
     <ClCompile Include="20230601.cpp" />
     <ClCompile Include="230601Q_YJH.cpp" />
     <ClCompile Include="230631_Warmup.cpp" />
+    <ClCompile Include="KillEven.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
