@@ -8,50 +8,50 @@ int Discri();					//유저에게 수를 입력 받아서 짝홀수를 판별하는 함수
 void EDice(), NDice(), Critper60();
 int Fight();
 
-int main()
-{
-	//int loopcount = 1;			//루프 카운트 선언
-
-	//char userinput = '0';
-
-	//while (loopcount <= 1000)		//루프 카운트가 10이하일 때까지 반복
-	//{
-	//	if (loopcount == 1)
-	//	{
-	//		printf("[튜토리얼] 만약 게임을 만들려고 한다면 이런식으로\n");
-	//	}
-	//	
-	//	printf("[System] 당신은 플레이어 입니다. \n");
-	//	printf("수행할 액션을 입력해 주세요 : ");
-	//	scanf_s("%c", &userinput);
-
-	//	if (userinput == 'q' || userinput == 'Q')
-	//	{
-	//		printf("\n[System] 프로그램을 종료합니다.\n");
-	//		break;
-	//	}
-	//	else
-	//	{
-	//		printf("\n[System] 해당 입력은 정의되어 있지 않습니다.\n");
-	//		loopcount += 1;
-	//		continue;
-	//	}
-
-	//}							// loop: 일정 횟수 반복
-	
-
-	/*EDice();
-
-	NDice();
-
-	Discri();*/
-
-	//Critper60();
-
-	Fight();
-
-	return 0;
-}										//main()
+//int main()
+//{
+//	//int loopcount = 1;			//루프 카운트 선언
+//
+//	//char userinput = '0';
+//
+//	//while (loopcount <= 1000)		//루프 카운트가 10이하일 때까지 반복
+//	//{
+//	//	if (loopcount == 1)
+//	//	{
+//	//		printf("[튜토리얼] 만약 게임을 만들려고 한다면 이런식으로\n");
+//	//	}
+//	//	
+//	//	printf("[System] 당신은 플레이어 입니다. \n");
+//	//	printf("수행할 액션을 입력해 주세요 : ");
+//	//	scanf_s("%c", &userinput);
+//
+//	//	if (userinput == 'q' || userinput == 'Q')
+//	//	{
+//	//		printf("\n[System] 프로그램을 종료합니다.\n");
+//	//		break;
+//	//	}
+//	//	else
+//	//	{
+//	//		printf("\n[System] 해당 입력은 정의되어 있지 않습니다.\n");
+//	//		loopcount += 1;
+//	//		continue;
+//	//	}
+//
+//	//}							// loop: 일정 횟수 반복
+//	
+//
+//	/*EDice();
+//
+//	NDice();
+//
+//	Discri();*/
+//
+//	//Critper60();
+//
+//	Fight();
+//
+//	return 0;
+//}										//main()
 
 int Discri()
 {
