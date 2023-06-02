@@ -3,23 +3,23 @@
 
 int SumEven(int num);
 
-int main()
-{
-	int number;
-	printf("숫자를 입력해주세요(0~1000) : ");
-	scanf_s("%d", &number);
-
-	if (number> 1000 || number < 0)
-	{
-		printf("범위를 벗어난 숫자 입니다. 프로그램을 종료합니다.\n");
-	}
-	else
-	{
-		printf("%d이하의 짝수를 모두 더한 값은 % d입니다.\n", number, SumEven(number));
-	}
-
-	return 0;
-}
+//int main()
+//{
+//	int number;
+//	printf("숫자를 입력해주세요(0~1000) : ");
+//	scanf_s("%d", &number);
+//
+//	if (number> 1000 || number < 0)
+//	{
+//		printf("범위를 벗어난 숫자 입니다. 프로그램을 종료합니다.\n");
+//	}
+//	else
+//	{
+//		printf("%d이하의 짝수를 모두 더한 값은 % d입니다.\n", number, SumEven(number));
+//	}
+//
+//	return 0;
+//}
 
 //int SumEven(int num)
 //{

@@ -3,12 +3,12 @@
 
 void Square(int size), MakeSquare();
 
-//int main()
-//{
-//	MakeSquare();
-//
-//	return 0;
-//}
+int main()
+{
+	MakeSquare();
+
+	return 0;
+}
 
 void MakeSquare()
 {
