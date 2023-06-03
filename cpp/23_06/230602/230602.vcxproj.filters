@@ -21,7 +21,7 @@
     <ClCompile Include="0602Warmup.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="23_06_1st_YJH.cpp">
+    <ClCompile Include="WalkingAdventure_YJH.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

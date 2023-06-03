@@ -29,11 +29,12 @@ int main()
 	printf("****************************************\n\n");
 	printf("     시작 하려면 아무 키나 누르세요\n");
 	printf("\n****************************************\n\n");
-	_getch();
+	power = _getch();
 	system("cls");
 
-	while (1)										// 반복문 while
+	while (6)										// 반복문 while
 	{
+		power = '0';
 		loop += 1;
 
 		if (playerhp <= 0)									// 최우선 예외 처리 if
@@ -121,12 +122,16 @@ int Mountain()												// 산 입장함수
 
 int Battle(int playerhp, int playerMhp, int playeratk)
 {
-	switch ((rand() % 100 + 1) < 41)						// 1 ~ 100 사이의 수를 생성했을 때 40 이하라면 switch (1)
+	int battle = rand() % 100 + 1;
+	bool battle40 = battle < 41;
+
+	switch (battle40)						// 1 ~ 100 사이의 수를 생성했을 때 40 이하라면 switch (1)
 	{
 	case 1:													// switch(1) 일때 스코프 내부 실행
 	{
 		int monsterMhp = (25 + loop / 2), monsteratk = 4;	// 몬스터의 최대체력, 공격력 선언 및 초기화
 		int matkrandom = rand() % 100 + 1;					// 1 ~ 100 수를 받아 몬스터공격력증가 확률에 대입
+		char battle = '0';
 		if (matkrandom < 31)								// matkrandom이 30이하라면 (30퍼센트)
 		{
 			monsteratk += 1;								// 몬스터공격력 + 1
@@ -137,7 +142,7 @@ int Battle(int playerhp, int playerMhp, int playeratk)
 		printf("      화가 난 몬스터와 전투합니다\n");
 		printf(" 전투를 시작 하려면 아무 키나 누르세요\n\n\n");
 		printf("\n****************************************\n\n");
-		_getch();
+		battle = _getch();
 		system("cls");
 		while (1)
 		{
@@ -179,7 +184,7 @@ int Battle(int playerhp, int playerMhp, int playeratk)
 				system("cls");
 				break;
 			}
-		}												// while 문 종료
+		}												// while(1)
 		return playerhp;								// case 1이 끝날 때 playerhp 반환
 	}													// case 1:
 	default:
