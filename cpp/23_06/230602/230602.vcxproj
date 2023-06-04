@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="0602Warmup.cpp" />
     <ClCompile Include="230602.cpp" />
+    <ClCompile Include="WalkingAdventuerTest.cpp" />
     <ClCompile Include="WalkingAdventure_YJH.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
