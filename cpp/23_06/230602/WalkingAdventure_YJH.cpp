@@ -9,8 +9,9 @@ int Battle(), Hell(), HellEvent();
 int ForestEvent(), Forest();
 int RiverEvent(), River();
 int Mountain(), Start();
+int Ending_Thanks();
 
-int loop = 0;
+int loop = 0, floop = 0;
 int playerMhp = 50;
 int playeratk = 5;
 int playerhp = playerMhp;
@@ -25,20 +26,17 @@ int main()
 	power = _getch();
 	system("cls");
 
-	while (loop < 6)										// 반복문 while
+	while (floop < 6)										// 반복문 while
 	{
 		power = '0';
 		loop += 1;
 
 		if (playerhp <= 0)									// 최우선 예외 처리 if
 		{
-			printf("\n****************************************\n\n");
-			printf("\n\n\n            게임을 종료합니다\n");
-			printf("       플레이 해주셔서 감사합니다\n\n\n");
-			printf("\n****************************************\n\n");
+			Ending_Thanks();
 			break;
 		}													// 최우선 예외 처리 if()
-
+		
 		printf("\n****************************************\n\n");
 		printf("       **** 현재 나의 상태 *****\n");						// 모험가
 		printf("       * 체력:%d/%d   공격력:%d *\n", playerhp, playerMhp, playeratk);	//  상태
@@ -54,39 +52,59 @@ int main()
 		if (power == 'q' || power == 'Q')					// 게임 종료 조건문 if
 		{
 			printf("\n****************************************\n\n");
-			printf("\n\n\n            게임을 종료합니다\n");
-			printf("       플레이 해주셔서 감사합니다\n\n\n");
+			printf("       **** 현재 나의 상태 *****\n");						// 모험가
+			printf("       * 체력:%d/%d   공격력:%d *\n", playerhp, playerMhp, playeratk);	//  상태
+			printf("       *************************\n\n");					//  출력
+			printf("       ┌──────────┐ ┌──────────┐\n");
+			printf("       │@종료 = q@│ │ 걷기 = w │\n");
+			printf("       └──────────┘ └──────────┘\n");
 			printf("\n****************************************\n\n");
+			Sleep(700);
+			system("cls");
+			Ending_Thanks();
 			break;
 		}													// 게임 종료 if()
 
 		if (power == 'w' || power == 'W')					// 걷기 조건문 걷기 if
 		{
+			
+			printf("\n****************************************\n\n");
+			printf("       **** 현재 나의 상태 *****\n");						// 모험가
+			printf("       * 체력:%d/%d   공격력:%d *\n", playerhp, playerMhp, playeratk);	//  상태
+			printf("       *************************\n\n");					//  출력
+			printf("       ┌──────────┐ ┌──────────┐\n");
+			printf("       │ 종료 = q │ │@걷기 = w@│\n");
+			printf("       └──────────┘ └──────────┘\n");
+			printf("\n****************************************\n\n");
+			Sleep(700);
+			system("cls");
+
 			int wrandom = rand() % 100 + 1;					// 1 ~ 100 사이의 랜덤 수를 길 랜덤에 저장
 
-			if (wrandom <= 1 || loop == 100)				// 1 퍼센트 확률로 지옥에 진입
+			if (wrandom <= 1 || floop == 5)				// 1 퍼센트 확률, 루프100회 후 지옥에 진입
 			{
 				Hell();
 				HellEvent();
 				continue;
 			}
 
-			if (wrandom <= 30)								// 길 랜덤이 30이하일 때 실행하는 강 if
+			if (wrandom <= 30)								// 29퍼 확률로 숲으로 진입
 			{
+				floop += 1;
 				Forest();
 				ForestEvent();
 				continue;
 			}												// 숲 if
-			else if (wrandom <= 50)							// 길 랜덤이 31이상 50이하일 때 실행하는 강 if
+			else if (wrandom <= 50)							// 20퍼 확률로 강으로 진입
 			{
 				River();
 				RiverEvent();
 				continue;
 			}												// 강 if()
-			else											// 길 랜덤이 51이상 100이하일 때 실행하는 산 else
+			else											// 50퍼 확률로 산으로 진입
 			{
 				Mountain();
-				Battle(); // Battle 함수 실행 후 체력값을 받아서 현재 체력에 입력
+				Battle();
 				continue;
 			}												// 산 else()
 		}													// 걷기 if()
@@ -140,14 +158,14 @@ int Battle()
 	int battle = rand() % 100 + 1;
 	bool battle40 = battle < 41;
 
-	switch (battle40)							// 1 ~ 100 사이의 수를 생성했을 때 40 이하라면 switch (1)
+	switch (battle40)										// 1 ~ 100 사이의 수를 생성했을 때 40 이하라면 switch (1)
 	{
 	case 1:													// switch(1) 일때 스코프 내부 실행
 	{
 		int monsterMhp = 20, monsteratk = 4;				// 몬스터의 최대체력, 공격력 선언 및 초기화
-		monsterMhp += (loop / 2 + 5);						// (5 + 루프횟수/2)만큼 몬스터 최대체력 증가
+		monsterMhp += ((loop*2) / 3);						// (루프횟수*2)/3만큼 몬스터 최대체력 증가
 		int monsterhp = monsterMhp;
-		monsteratk += (loop / 3);
+		monsteratk += (loop / 10);							// 루프횟수/10만큼 몬스터 공격력 증가
 		int matkcrit = monsteratk * 2;
 		int patkcrit = playeratk * 2;
 
@@ -171,7 +189,7 @@ int Battle()
 				printf("             몬스터의 턴\n\n");
 				printf("\n            !!크리티컬!!\n");
 				printf("         %d의 피해를 받았습니다\n", matkcrit);
-				playerhp -= matkcrit;							// 플레이어의 현재체력
+				playerhp -= matkcrit;						// 플레이어의 현재체력
 				(playerhp < 0) ? playerhp = 0 : playerhp = playerhp;
 				printf("         현재 내 체력 : %d/%d\n\n", playerhp, playerMhp);	// 플레이어의 현재체력이 0미만일 경우 0으로 0미만이 아닐경우 유지
 				printf("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n");
@@ -184,7 +202,7 @@ int Battle()
 				printf("             몬스터의 턴\n\n");
 				printf("\n       몬스터에게 공격받았습니다\n");
 				printf("         %d의 피해를 입었습니다\n", monsteratk);
-				playerhp -= monsteratk;							// 플레이어의 현재체력
+				playerhp -= monsteratk;						// 플레이어의 현재체력
 				(playerhp < 0) ? playerhp = 0 : playerhp = playerhp;
 				printf("         현재 내 체력 : %d/%d\n\n", playerhp, playerMhp);	// 플레이어의 현재체력이 0미만일 경우 0으로 0미만이 아닐경우 유지
 				printf("\n****************************************\n\n");
@@ -437,9 +455,20 @@ int HellEvent()
 
 		if (playerhp <= 0)								// 플레이어의 현재체력이 0이하일 경우 while 문 종료
 		{
+			if (devilhp > (devilhp / 2))
+			{
+				printf("\n****************************************\n\n");
+				printf("\n\n\n            지옥의 악마에게\n");
+				printf("        처참하게 도륙당했습니다\n\n\n");
+				printf("\n****************************************\n\n");
+				Sleep(2000);
+				system("cls");
+				break;
+			}
 			printf("\n****************************************\n\n");
-			printf("\n\n\n            지옥의 악마에게\n");
-			printf("        그만 죽고 말았습니다...\n\n\n");
+			printf("\n\n\n         당신의 영혼이 악마에게\n");
+			printf("          사로 잡혔습니다...\n");
+			printf("      영원히 악마에게 종속됩니다...\n\n");
 			printf("\n****************************************\n\n");
 			Sleep(2000);
 			system("cls");
@@ -483,5 +512,14 @@ int HellEvent()
 			break;
 		}
 	}
+	return 0;
+}
+
+int Ending_Thanks()
+{
+	printf("\n****************************************\n\n");
+	printf("\n\n\n            게임을 종료합니다\n");
+	printf("       플레이 해주셔서 감사합니다\n\n\n");
+	printf("\n****************************************\n\n");
 	return 0;
 }
