@@ -3,12 +3,12 @@
 #include <conio.h>
 
 int Gugudan();
-void des();
+void Quest_0605();
 
 int main()
 {
 	//Gugudan();
-	des();
+	Quest_0605();
 	return 0;
 }
 
@@ -31,25 +31,27 @@ int Gugudan()
 	}
 	return 0;
 }
-void des() 
+void Quest_0605()
 {
 	char board[5] = {'0',};
+	int x = 0, y = 0;
 
-	for (int i = 0; i < 5; i++) 
+	for (y = 0; y < 5; y += 1)
 	{
-		int j = 0;
-		int count = 0;
-		board[i] = '*';
-		for (j = 0; j < 5; j++)
+		for (x = 0; x < 5; x += 1)
 		{
-			if (j == count)
+			board[x] = '*';
+
+			if (x == y)
 			{
-				board[i] = '0';
+				board[x] = '0';
 			}
-			printf("%c", board[j]);
+
+			printf("%c", board[x]);
 		}
-		count += 1;
-		printf("아무키나 입력하세요\n");
+		x = 0;
+		printf("   아무키나 눌러주세요");
 		_getch();
+		printf("\n");
 	}
 }
