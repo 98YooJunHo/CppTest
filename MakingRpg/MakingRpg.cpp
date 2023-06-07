@@ -1,16 +1,18 @@
-﻿#include <time.h>   // time()함수 사용을 위해 선언
-#include <conio.h>  // _getch()사용을 위해 선언
+﻿#include <time.h>       // time()함수 사용을 위해 선언
+#include <conio.h>      // _getch()사용을 위해 선언
 #include <stdio.h>  
-#include <stdlib.h> // 자료형변환, 난수생성을 위해 선언
+#include <stdlib.h>     // 자료형변환, 난수생성을 위해 선언
 #include <iostream>
-#include <windows.h> // system("cls)사용을 위해 선언
+#include <windows.h>    // system("cls)사용을 위해 선언
 
 void Print_Error();
-char Print_GameStart();
 void Print_GameEnd();
-void Print_GameStart_Start(), Print_GameStart_Quit();
+
+char Print_GameStart();
+void Print_GameStart_Start();
+void Print_GameStart_Quit();
 char Print_RollStat(int str, int dex, int wis, int con);
-void Print_RollStat_Roll(int str, int dex, int wis, int con); 
+void Print_RollStat_Roll(int str, int dex, int wis, int con);
 void Print_RollStat_Start(int str, int dex, int wis, int con);
 void Print_RollStat_Quit(int str, int dex, int wis, int con);
 
@@ -23,38 +25,38 @@ int main()                                                  // !main
 
     keyinput = Print_GameStart();
 
-    if (keyinput == 'q' || keyinput == 'Q')                     // 게임 종료 if
+    if (keyinput == 'q' || keyinput == 'Q')                 // 게임 종료 if
     {
         Print_GameStart_Quit();
         Print_GameEnd();
         return 0;                                               // 메인함수 종료
     }                                                       // 게임 종료 if()
     
-    if (keyinput == 's' || keyinput == 'S')                     // 게임 시작 if
+    if (keyinput == 's' || keyinput == 'S')                 // 게임 시작 if
     {
         Print_GameStart_Start();
         
-        while (1)                                               // !초기 스탯 설정 부
+        while (1)                                           // !초기 스탯 설정 부
         {
             keyinput = '0';                                     // 키 입력 받기전 초기화
 
             keyinput = Print_RollStat(str, dex, wis, con);
 
-            if (keyinput == 'q' || keyinput == 'Q')             // 스탯 설정 중 게임 종료 if
+            if (keyinput == 'q' || keyinput == 'Q')         // 스탯 설정 중 게임 종료 if
             {
                 Print_RollStat_Quit(str, dex, wis, con);        
                 Print_GameEnd();
                 return 0;                                       // 메인함수 종료
             }                                               // 스탯 설정 중 게임 종료 if()
             
-            if (keyinput == 'r' || keyinput == 'R')             // 스탯 재설정 if
+            if (keyinput == 'r' || keyinput == 'R')         // 스탯 재설정 if
             {
                 Print_RollStat_Roll(str, dex, wis, con);          
                 Roll_CharacterStat(&str, &dex, &wis, &con);     // 스탯 재설정후 값 대입
                 continue;                                       // 재설정후 while로 복귀
             }                                               // 스탯 재설정 if()
 
-            if (keyinput == 's' || keyinput == 'S')             // 스탯 설정완료후 스탯재설정 탈출 if
+            if (keyinput == 's' || keyinput == 'S')         // 스탯 설정완료후 스탯재설정 탈출 if
             {
                 Print_RollStat_Start(str,dex,wis,con);
                 break;
@@ -64,11 +66,12 @@ int main()                                                  // !main
         }                                                   // !초기 스탯 설정부 종료
         
 
-    }                                                           // 게임 시작 if()
+
+    }                                                       // 게임 시작 if()
 
     Print_Error();                                              // main함수 시작후 게임 시작도, 종료도 아닌 다른 값 입력시
     main();                                                     // 에러 출력 후 main 함수로 복귀
-}                                                               // main()
+}                                                           // main()
 
 // 올바르지 못한 키입력 화면 출력 함수
 void Print_Error()
@@ -164,9 +167,9 @@ char Print_GameStart()
     printf("                          ￣         ￣￣     ￣                 ￣￣￣￣￣￣           \n");
     printf("                                                                                          \n");
     printf("                                                                                          \n");
-    printf("                      ┌────────────────┐            ┌────────────────┐                  \n");
-    printf("                      │  시작하기 = s  │            │  종료하기 = q  │                  \n");
-    printf("                      └────────────────┘            └────────────────┘                  \n");
+    printf("                      ┌──────────────────┐          ┌──────────────────┐              \n");
+    printf("                      │   시작하기 = s   │          │   종료하기 = q   │               \n");
+    printf("                      └──────────────────┘          └──────────────────┘               \n");
     printf("                                                                                          \n");
     power = _getch();
     system("cls");
@@ -199,9 +202,9 @@ void Print_GameStart_Start()
     printf("                          ￣         ￣￣     ￣                 ￣￣￣￣￣￣           \n");
     printf("                                                                                          \n");
     printf("                                                                                          \n");
-    printf("                      ┌────────────────┐            ┌────────────────┐                  \n");
-    printf("                      │▶ 시작하기 = s ◀│            │  종료하기 = q  │                  \n");
-    printf("                      └────────────────┘            └────────────────┘                  \n");
+    printf("                      ┌──────────────────┐          ┌──────────────────┐              \n");
+    printf("                      │ ▶시작하기 = s◀ │          │   종료하기 = q   │               \n");
+    printf("                      └──────────────────┘          └──────────────────┘               \n");
     printf("                                                                                          \n");
     Sleep(1300);
     system("cls");
@@ -233,9 +236,9 @@ void Print_GameStart_Quit()
     printf("                          ￣         ￣￣     ￣                 ￣￣￣￣￣￣           \n");
     printf("                                                                                          \n");
     printf("                                                                                          \n");
-    printf("                      ┌────────────────┐            ┌────────────────┐                  \n");
-    printf("                      │  시작하기 = s  │            │▶ 종료하기 = q ◀│                  \n");
-    printf("                      └────────────────┘            └────────────────┘                  \n");
+    printf("                      ┌──────────────────┐          ┌──────────────────┐              \n");
+    printf("                      │   시작하기 = s   │          │ ▶종료하기 = q◀ │               \n");
+    printf("                      └──────────────────┘          └──────────────────┘               \n");
     printf("                                                                                          \n");
     Sleep(1300);
     system("cls");
@@ -300,7 +303,7 @@ void Print_RollStat_Roll(int str, int dex, int wis, int con)
     printf("                                                                                          \n");
     printf("        ┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐       \n");
     printf("        │                     │   │                     │   │                     │       \n");
-    printf("        │     ▶재설정: r◀     │   │     게임시작: s     │   │     게임종료: q     │       \n");
+    printf("        │    ▶재설정: r◀    │   │     게임시작: s     │   │     게임종료: q     │       \n");
     printf("        │                     │   │                     │   │                     │       \n");
     printf("        └─────────────────────┘   └─────────────────────┘   └─────────────────────┘       \n");
     printf("                                                                                          \n");
@@ -333,7 +336,7 @@ void Print_RollStat_Start(int str, int dex, int wis, int con)
     printf("                                                                                          \n");
     printf("        ┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐       \n");
     printf("        │                     │   │                     │   │                     │       \n");
-    printf("        │      재설정: r      │   │    ▶게임시작: s◀    │   │     게임종료: q     │       \n");
+    printf("        │      재설정: r      │   │   ▶게임시작: s◀   │   │     게임종료: q     │       \n");
     printf("        │                     │   │                     │   │                     │       \n");
     printf("        └─────────────────────┘   └─────────────────────┘   └─────────────────────┘       \n");
     printf("                                                                                          \n");
@@ -366,7 +369,7 @@ void Print_RollStat_Quit(int str, int dex, int wis, int con)
     printf("                                                                                          \n");
     printf("        ┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐       \n");
     printf("        │                     │   │                     │   │                     │       \n");
-    printf("        │      재설정: r      │   │     게임시작: s     │   │    ▶게임종료: q◀    │       \n");
+    printf("        │      재설정: r      │   │     게임시작: s     │   │   ▶게임종료: q◀   │       \n");
     printf("        │                     │   │                     │   │                     │       \n");
     printf("        └─────────────────────┘   └─────────────────────┘   └─────────────────────┘       \n");
     printf("                                                                                          \n");
